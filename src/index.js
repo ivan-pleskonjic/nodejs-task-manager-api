@@ -6,7 +6,7 @@ const taskRouter = require('./routers/task')
 const app = express()
 const port = process.env.PORT
 
-app.use(express.json) // automatically parse request bodies as json
+app.use(express.json()) // automatically parse request bodies as json
 app.use(userRouter)
 app.use(taskRouter)
 
